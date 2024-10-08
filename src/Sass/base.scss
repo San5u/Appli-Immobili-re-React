@@ -1,0 +1,38 @@
+@import "./variables.scss";
+
+@mixin mediamobile () {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+@media (max-width: map-get($breakpoints, mobile)) {
+    .hiddenMobile {
+        display: none !important;
+    }
+}
+
+@media (min-width: map-get($breakpoints, desktop)) {
+    .hiddenDesktop {
+        display: none !important;
+    }
+}
