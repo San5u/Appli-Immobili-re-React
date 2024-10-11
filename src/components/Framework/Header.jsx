@@ -7,7 +7,7 @@ function Header() {
             <NavLink to = "/"><img src = {logoHeader} alt = "Logo Kasa" className="logo-header"/></NavLink>
             <nav className = "header__nav">
                 <NavLink to = "/">Accueil</NavLink>
-                <NavLink to = "/apropos">A propos </NavLink>
+                <NavLink to = "/About">A propos </NavLink>
             </nav>
         </header>
     );
