@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 10px 50px;
+    @include mediamobile () {
+        margin: 0;
+    }
+
+    .logo-header {
+        width: 80%;
+        margin-left: 20px;
+    }
+    
+    &__nav {
+        display: flex;
+        gap: 20px;
+        font-size: 18px;
+    }
+    
+    &__nav a {
+        text-decoration: none;
+        color: black;
+        margin-right: 20px;
+        font-weight: 500;
+        @include mediamobile () {
+            font-size: 1.5em;
+        }
+    }
+
+    &__nav a.active {
+        border-bottom: solid 1px black;
+    }
+}
