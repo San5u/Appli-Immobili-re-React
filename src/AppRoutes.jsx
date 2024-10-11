@@ -10,8 +10,8 @@ function AppRoutes() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Layout />}>
-                    <Route index element={<Accueil />}/>
-                    <Route path="/About" element={<Apropos />}/>
+                    <Route index element={<Apropos/>}/>
+                    <Route path="/About" element={<Accueil />}/>
                     <Route path="/Housing/:id" element={<Logement />}/>
                     <Route path="*" element={<Error />}/>
                 </Route>
