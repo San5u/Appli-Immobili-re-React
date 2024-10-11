@@ -1,4 +1,4 @@
-import Banner from "../../components/Structure/Banner";
+import Banner from "../../components/Framework/Banner";
 import ImageAPropos from "../../assets/ImageApropos.png";
 import Collapse from "../../components/Collapse/Collapse";
 import aproposJson from "../../datas/apropos.json";

@@ -1,4 +1,4 @@
-import Banner from "../../components/Structure/Banner";
+import Banner from "../../components/Framework/Banner";
 import ImageAccueil from "../../assets/ImageAccueil.png";
 import logementsList from "../../datas/logementsList.json";
 import Card from "../../components/Cards/Card";
