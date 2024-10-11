@@ -1,0 +1,76 @@
+.collapse {
+    margin-right: 220px;
+    margin-left: 220px;
+    padding: 25px;
+    @include mediamobile () {
+        margin-left: 10px;
+    }
+
+    .collapse-title {
+        background-color: $main-color;
+        padding: 7px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 1.7rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include mediamobile () {
+            width: 128%;
+            height: 50px;
+        }
+    }
+
+    .collapse-content {
+        color: black;
+        font-size: 1.1em;
+        margin-bottom: 15px;
+        padding: 15px;
+        background-color: $tertiary-color;
+        border-radius: 0 0 15px 15px;
+
+        &.visible {
+            animation: fadeIn 0.5s forwards;
+            display: block;
+        }
+
+        &.hidden {
+            animation: fadeOut 0.5s forwards;
+            display: block;
+        }
+
+        @include mediamobile () {
+            width: 125%;
+        }
+    }
+
+    .button-chevron {
+        cursor: pointer;
+        transition: transform 0.5s ease;
+        &.rotated {
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+}

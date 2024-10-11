@@ -1,6 +1,6 @@
 import Banner from "../../components/Framework/Banner";
 import ImageAccueil from "../../assets/ImageAccueil.png";
-import logementsList from "../../datas/logementsList.json";
+import logementsList from "../../Information/Housing.json";
 import Card from "../../components/Cards/Card";
 
 function Accueil() {

@@ -1,5 +1,5 @@
 import {Navigate, useParams} from "react-router-dom";
-import logementsList from "../../datas/logementsList.json";
+import logementsList from "../../Information/Housing.json";
 import Collapse from "../../components/Collapse/Collapse";
 import Host from "../../components/Host/Host";
 import Rating from "../../components/Rating/Rating";
