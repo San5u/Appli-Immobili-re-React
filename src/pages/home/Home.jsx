@@ -3,6 +3,7 @@ import ImageAccueil from "../../assets/ImageAccueil.png";
 import logementsList from "../../Information/Housing.json";
 import Card from "../../components/Cards/Card";
 
+
 function Accueil() {
     return (
         <div className="accueilContainer">
