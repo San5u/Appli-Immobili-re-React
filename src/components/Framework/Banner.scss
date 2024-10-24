@@ -8,6 +8,10 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    @include mediamobile () {
+        height: 150px;
+    }
+
     
     .overlay {
         position: absolute;

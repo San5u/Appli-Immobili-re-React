@@ -1,13 +1,13 @@
 .footer {
     background-color: $second-color;
     text-align: center;
-    padding: 1em 0;
+    padding: 2vh 0;
     width: 100%;
     color: $primary-color;
     @include mediamobile () {
-        padding: 5em 0 5em 0;
+        padding: 8vh 0;
         .logoKasa {
-            width: 25%;
+            width:5em;
         }
     }
 }

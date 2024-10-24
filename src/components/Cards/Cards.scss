@@ -8,17 +8,19 @@
     background-color: $main-color;
 
     @include mediamobile () {
-        width: 100%;
+        width: 80vw;
         height: 19rem;
         position: relative;
-        margin: 0 auto;
+        margin: 5vw auto; 
         margin-bottom: 1.25rem;
+        
+        
     }
     
     img {
         width: 100%;
         object-fit: cover;
-        height: 250px;
+        height:  250px;
         border-radius: 10px;
         @include mediamobile () {
             height:  15.9375rem;
@@ -32,10 +34,11 @@
         padding-top: 8px;
         align-items: center;
         @include mediamobile () {
-            font-size: 1.1rem;
-            padding-left: 1.25rem;
-            padding-right: 1.25rem;
+            font-size: 500;
+            padding-left: 0.25rem;
+            padding-right: 0.25rem;
          margin: 0px;
+         
 
         }
     }

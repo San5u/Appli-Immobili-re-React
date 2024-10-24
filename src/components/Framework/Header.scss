@@ -12,6 +12,11 @@
     .logo-header {
         width: 80%;
         margin-left: 20px;
+        @include mediamobile () {
+            width: 40vw;
+            height: auto;
+            max-width: 5rem; 
+        }
     }
     
     &__nav {
@@ -26,7 +31,9 @@
         margin-right: 20px;
         font-weight: 500;
         @include mediamobile () {
-            font-size: 1.5em;
+            font-size: 0.75rem;
+            line-height: 142.6%;
+            text-transform: uppercase;
         }
     }
 
